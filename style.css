@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", "Roboto", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body {
+    width: 78.33%;
+    margin: 0 auto;
+}
+
+nav {
+    height: 84px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+nav>div #logo {
+    height: 47px;
+    width: 148px;
+}
+
+nav #manu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 48px;
+    font-size: 2rem;
+    text-align: center;
+
+
+}
+
+/* nav style end  */
+
+.hero {
+    height: 455px;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #FEEAE9;
+    border-radius: 15px;
+}
+
+.hero #hero-text{
+    height: 95%;
+    width: 55%;
+    margin: 10px;
+}
+
+.hero #hero-text h1{
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #1F1F1F;
+}
+
+.hero #hero-text p{
+    font-size: 1rem;
+line-height: 26px;
+color: #4E4E4E;
+margin-bottom: 30px;
+
+}
+
+.hero #hero-text h3{
+    color: #FF136F;
+    font-size: 2.6rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.hero #hero-text button{
+ background-image: linear-gradient(to right, #FF589B, #FF589B);
+ color: white;
+height: 47px;
+width: 165px;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+transition: .4s;
+text-decoration: none;
+
+}
+
+.hero #hero-text button:hover{
+    background-image:linear-gradient(to right, #fc0050,#d10054);
+    transform: scale(1.02);
+}
+
+.hero #hero-img{
+    height: 80%;
+    width: 40%;
+    text-align: center;
+}
