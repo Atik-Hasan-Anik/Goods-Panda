@@ -9,6 +9,8 @@
 body {
     width: 78.33%;
     margin: 0 auto;
+    display: -moz-stack;
+    z-index: 99;
 }
 
 nav {
@@ -46,6 +48,7 @@ nav #manu {
     padding: 20px;
     background-color: #FEEAE9;
     border-radius: 15px;
+    margin-bottom: 40px;
 }
 
 .hero #hero-text{
@@ -55,7 +58,7 @@ nav #manu {
 }
 
 .hero #hero-text h1{
-    font-size: 3.5rem;
+    font-size: 3.5em;
     margin-bottom: 20px;
     font-weight: bold;
     color: #1F1F1F;
@@ -84,7 +87,7 @@ width: 165px;
 border: none;
 border-radius: 6px;
 cursor: pointer;
-transition: .4s;
+transition:all .4s ease;
 text-decoration: none;
 
 }
@@ -92,10 +95,168 @@ text-decoration: none;
 .hero #hero-text button:hover{
     background-image:linear-gradient(to right, #fc0050,#d10054);
     transform: scale(1.02);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.658);
 }
 
 .hero #hero-img{
     height: 80%;
     width: 40%;
     text-align: center;
+}
+
+/* hero section end  */
+
+.Categories{
+    height: 198px;
+    padding: 20px o;
+ 
+}
+
+.Categories h1, .shoes h1{
+    font-size: 36px;
+    font-weight: 550;
+}
+
+.Categories .Categories-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.Categories .Categories-items .categories-item{
+    height: 120px;
+    width: 358px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 36px;
+    transition: all .3s ease;
+}
+
+
+.Categories .Categories-items .categories-item div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   transition: all .3s ease;
+
+}
+
+
+.Categories .Categories-items .caregories-item1{
+    background-color: #FF9C35;
+}
+
+.Categories .Categories-items .caregories-item2{
+    background-color: #FF136F;
+}
+
+.Categories .Categories-items .caregories-item3{
+   
+    background-color:  #3F07F8;
+ 
+}
+
+
+.Categories .Categories-items .categories-item:hover{
+    transform: scale(1.013);
+     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.658);
+}
+
+.Categories .Categories-items .categories-item:hover div{
+    transform: translateX(-20px);
+}
+
+.shoes{
+    margin: 8% 0 1% 0;
+ 
+}
+.shoes h1{
+    margin-bottom: 20px;
+}
+
+
+.shoes-container{
+  
+    height: 68vh;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+   
+    
+
+}
+
+.shoes-container .sho{
+width: 30%;
+padding: 10px;
+ border: 2px solid #929292;
+ border-radius: 16px;
+ transition: all .3s ease-in-out;
+}
+.sho img{
+    transition: all .3s ease;
+    height: 45%;
+}
+.sho:hover{
+    transform: translateY(-20px);
+    border-color: #d10054;
+}
+.sho:hover img{
+    transform: translateX(-28px);
+}
+
+
+
+.shoes-container .sho h2{
+    font-size: 1.5rem;
+    font-weight: 510;
+    margin-bottom: 15px;
+}
+
+.shoes-container .sho p{
+    font-size: 1rem;
+    line-height: 26px;
+    margin-bottom:13px ;
+    color: #4E4E4E;
+}
+
+.shoes-container .sho pre{
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+.shoes-container .sho button{
+    height: 52px;
+    width: 168px;
+    border-radius: 6px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    transition: all .3s ease;
+    
+   
+}
+
+.shoes-container .sho button i {
+    margin-left: 8px;
+    transition: all .3s ease;
+}
+
+
+/* common btn style  */
+.shoes-container .sho button:hover{
+    background-color: #d10054;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.658);
+        transform: scale(1.02);
+}
+
+.shoes-container .sho button:hover i{
+    transform: translateX(8px);
 }
